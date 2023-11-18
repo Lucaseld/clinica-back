@@ -49,6 +49,6 @@ export const Turnos = sequelize.define(
   }
 );
 
-// Relaciones entre modelos
+
 Turnos.belongsTo(Medicos, { foreignKey: 'idMedico', as: 'medico' });
 Turnos.belongsTo(Pacientes, { foreignKey: 'idPaciente', as: 'paciente' });
