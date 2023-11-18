@@ -1,7 +1,6 @@
 import express from "express";
 import pacientesRoutes from './routes/pacientes.routes.js'
 import medicosRoutes from './routes/medicos.routes.js'
-import turnosRoutes from './routes/turnos.routes.js'
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -20,6 +19,5 @@ app.use((req, res, next) => {
 app.use(express.json())
 app.use(pacientesRoutes);
 app.use(medicosRoutes);
-app.use(turnosRoutes);
 
 export default app;
