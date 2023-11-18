@@ -1,59 +1,5 @@
 import { Medicos } from "../model/medicos.js";
 import { Pacientes } from "../model/pacientes.js";
-// import { Turnos } from "../model/turnos.js";
-
-// const getTurno = () => {};
-// const getTurnos = async (req,res) => {
-//   const getTurnos = await Turnos.findAll();
-//   res.send(getTurnos);
-// };
-// const createTurnos = async (req,res) => {
-//   try {
-//     const { idPaciente, idMedico, especialidad, fechaTurno, obraSocial } =
-//       req.body;
-
-//     const paciente = await Pacientes.findByPk(idPaciente);
-//     if (!paciente) {
-//       return res.status(400).json({ error: "El paciente no existe" });
-//     }
-//     const medico = await Medicos.findByPk(idMedico);
-//     if (!medico) {
-//       return res.status(400).json({ error: "El médico no existe" });
-//     }
-
-//     const nuevoTurno = await Turnos.create({
-//       idPaciente,
-//       idMedico,
-//       especialidad,
-//       fechaTurno,
-//       obraSocial,
-//     });
-//     console.log(nuevoTurno);
-//     res.send("Turno creado");
-//   } catch (error) {
-//     res.status(500).json({ error: "El Turno no pudo crearse" });
-//   }
-// };
-
-// const updateTurnos = (req,res) => {};
-// const deleteTurnos = async (req,res) => {
-//     const { id } = req.params;
-//     try {
-//       const deleteTurno = await Turnos.destroy({
-//         where: { id },
-//       })
-//       deleteTurno
-//       ? res.send('El turno ha sido eliminado')
-//       : res.send(`No existe un turno con el id: ${id}`);
-//     } catch (error) {
-//       res.error(500).send(`Error del delete: ${error.message}`)
-//     }
-// };
-
-// export { getTurno, getTurnos, createTurnos, updateTurnos, deleteTurnos };
-
-
-// En el controlador de turnos
 
 import { Turnos } from "../model/turnos.js";
 
