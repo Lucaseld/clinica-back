@@ -1,6 +1,6 @@
 import Sequelize from 'sequelize';
 
-const password = process.env.PASSWORS
+const password = process.env.PASSWORD
 
 //export const sequelize = new Sequelize('clinica', 'postgres', '1234', {
 export const sequelize = new Sequelize('clinicadb', 'fl0user', password, {
